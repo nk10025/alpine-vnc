@@ -12,4 +12,4 @@ WORKDIR /home/alpine
 EXPOSE 5900
 USER alpine
 CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
-CMD ["/bin/bash","-c", "ff-fix.sh"]
+CMD ["/bin/sh","-c", "ff-fix.sh"]
