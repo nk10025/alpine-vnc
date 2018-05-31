@@ -12,4 +12,5 @@ WORKDIR /home/alpine
 EXPOSE 5900
 USER alpine
 CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
-CMD ["/bin/sh","-c", "ff-fix.sh"]
+# Not reqd after FFbug update
+#CMD ["/bin/sh","-c", "ff-fix.sh"]
